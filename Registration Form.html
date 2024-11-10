@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+    <style>
+        h1 {
+            margin: 1em auto;
+            text-align: center;
+            margin-bottom: 0%;
+        }
+        p:last-of-type {
+            margin-bottom: 0;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            margin: 10px;
+            font-weight: lighter;
+        }
+        body {
+            background: rgb(37, 0, 7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            color: white;
+        }
+        label {
+            display: inline-block;
+            margin: px;
+            font-weight: lighter;
+            font-size: medium;
+            margin-bottom: 15px;
+        }
+        fieldset {
+            margin-top: 20px;
+        }
+        input {
+            margin: auto;
+        }
+        a {
+            color: rgb(161, 132, 2);
+        }
+        a:hover {
+            color: rgba(0, 173, 241, 0.678);
+        }
+        a:visited {
+            color: white; 
+        }
+        form {
+            width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+        }
+        .submit {
+            margin: auto;
+        }
+
+    </style>
+    <form>
+            <title>Sample Portal</title>
+            <h1>My Sample Portal</h1>
+            <p>Please fill out this form with the required information</p>
+            <p>(This is just a test website)</p>
+            <fieldset>
+                <legend>Account Information <b>(required)</legend>
+            <label for="first-name">Enter Your First Name <input required style="font-style:italic" placeholder="Cloe Angelo" type="text" id="first-name"></label>
+            <label for="last-name">Enter Your Last Name <input required style="font-style:italic" placeholder="Peña" type="text" id="last-name"></label>
+            <label for="middle-name">Enter Middle Name <input required style="font-style:italic" placeholder="Delos Santos" type="text" id="middle-name"></label>
+            <label for="email">Enter Your Email <input required style="font-style:italic" placeholder="juandelacruz@gmail.com" type="email" id="email"></label>
+            <label for="password">Create New Password <input style="font-style:italic" required placeholder="max of 8 characters" maxlength="8" type="password" id="password">
+            </fieldset>
+            <fieldset>
+                <legend>Are you a Junior or a Senior?</legend>
+                <input checked required type="radio" name="Junior High School-Senior High School" id="Junior High School" value="JHS"> <label for="Junior High School"> Junior High School</label>  
+                <input type="radio" name="Junior High School-Senior High School" id="Senior High School" value="SHS"> <label for="Senior High School"> Senior High School</label>       
+            </fieldset>
+            <fieldset>
+                <legend>How old are you?</legend>
+                <label for="age">Enter Your Age here <input required placeholder="13+" type="number" max="120" min="13" name="age" id="age"></label>
+            </fieldset>
+           <fieldset>
+            <legend>Referrer</legend>
+            <label for=referrer>How did you hear about us?</label>
+                <select required id="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Social Media</option>
+                    <option value="2">Friend Group</option>
+                    <option value="3">Flyers</option>
+                    <option value="4">Teacher</option>
+                    <option value="5">Our Volunteers</option>
+                </select>
+            <label for="improvements">Any suggestions on my website?
+                <textarea id="improvements" name="improvements" rows="3" cols="30" placeholder="Improvements on the interface"...></textarea>
+            </label>
+           </fieldset>
+           
+           <input type="checkbox" id="checkbox" name="checkbox"> <label for="checkbox"> I accept the <a href="https://upload.wikimedia.org/wikipedia/en/7/73/Trollface.png" target="_blank">terms-and-conditions</a></label>
+           <input type="submit" value="Submit">
+           <p>Visit my profile</p>
+            <p><a href="https://www.facebook.com/cloeangelo.pena.35" target="_blank">Follow me! Click Here.</a> </a></p>
+    </div>
+    </form>
+</body>
+</main>
